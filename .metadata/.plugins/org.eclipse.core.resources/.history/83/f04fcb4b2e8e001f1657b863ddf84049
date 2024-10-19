@@ -1,0 +1,66 @@
+package fr.igm.cascabeta;
+
+import java.util.List;
+import java.util.Objects;
+
+public class TerritoryCase {
+  private TerritoryType[] sides;
+  private WildlifeToken wildlife;
+  private List<WildlifeToken> allowedWildlife;
+  //Constructor
+  public TerritoryCase(TerritoryType north,TerritoryType east, TerritoryType south,TerritoryType west, List<WildlifeToken> allowedWildlife) {
+    Objects.requireNonNull(north);
+    Objects.requireNonNull(east);
+    Objects.requireNonNull(west);
+    Objects.requireNonNull(south);
+    Objects.requireNonNull(allowedWildlife);
+    this.sides = new TerritoryType[] {north,east,south,west};
+    this.allowedWildlife = allowedWildlife;
+    this.wildlife = null;
+  }
+  //rotate the case clockwise by 90 degrees
+  public void rotateClockwise() {
+    var buffer = sides[3];
+    sides[3] = sides[2];
+    sides[1] = sides[0];
+    sides[0] = buffer;
+  }
+  //same as above but counterclockwise
+  public void rotateCounterClockwise() {
+    var buffer = sides[0];
+    sides[0] = sides[1];
+    sides[1] = sides[2];
+    sides[2] = sides[3];
+    sides[0] = buffer;
+  }
+  public boolean addWildlife(WildlifeToken token) {
+    Objects.requireNonNull(token);
+    if (allowedWildlife.contains(token)) {
+      this.wildlife = token;
+      return true;
+    }
+    return false;
+  }
+  public TerritoryType getTerritoryOnSide(int index) {
+    Objects.requireNonNull(index);
+    return sides[index %4];
+  }
+  public WildlifeToken getWildlife() {
+    return this.wildlife;
+  }
+  public List<WildlifeToken> getAllowedAnimals(){
+    return allowedWildlife;
+  }
+  //override of the to string function
+  public String toString() {
+    var result = new StringBuilder();
+    result.append("North : ");
+    result.append(sides[0]);
+    result.append(", East: ");
+    result.append(sides[1]);
+    result.append(", South:");
+    result.append(sides[2]);
+    result.append(",West.");
+    return result.toString();
+  }
+}

@@ -1,0 +1,11 @@
+package fr.igm.cascabeta;
+import java.util.List;
+import java.util.Objects;
+
+public class WildlifePile {
+  private List<WildlifeToken> pioche;
+  public WildlifePile() {
+    pioche = new ArrayList<>();
+    //il y a 20 token de chaque type
+  }
+}

@@ -1,0 +1,5 @@
+package fr.igm.cascabeta;
+
+public class WildlifePile {
+  private List<WildlifeToken> pioche;
+}

@@ -1,0 +1,10 @@
+package fr.igm.cascabeta;
+
+import java.util.List;
+
+public class TerritoryCase {
+  private TerritoryType[] sides;
+  private WildlifeToken animal;
+  private List<WildlifeToken> allowedAnimals;
+  
+}
