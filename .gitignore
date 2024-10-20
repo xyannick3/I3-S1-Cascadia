@@ -16,6 +16,8 @@
 *.tmp
 *.bak
 *.swp
+*.snap
+
 
 # Fichiers générés par l'OS
 .DS_Store
