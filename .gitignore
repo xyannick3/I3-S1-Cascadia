@@ -1,0 +1,23 @@
+# Fichiers et dossiers Eclipse
+/.project
+/.classpath
+/.settings/
+/.metadata/
+# Dossiers binaires
+/bin/
+/build/
+
+# Fichiers de configuration spécifiques à l'environnement
+/.idea
+/.vscode
+
+# Fichiers temporaires et caches
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Fichiers générés par l'OS
+.DS_Store
+Thumbs.db
+
