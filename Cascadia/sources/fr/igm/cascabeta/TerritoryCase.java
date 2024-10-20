@@ -8,13 +8,11 @@ public class TerritoryCase {
   private WildlifeToken wildlife;
   private List<WildlifeToken> allowedWildlife;
   //Constructor
-  public TerritoryCase(TerritoryType north,TerritoryType east, TerritoryType south,TerritoryType west, List<WildlifeToken> allowedWildlife) {
-    Objects.requireNonNull(north);
-    Objects.requireNonNull(east);
-    Objects.requireNonNull(west);
-    Objects.requireNonNull(south);
+  public TerritoryCase(TerritoryType territory1,TerritoryType territory2, List<WildlifeToken> allowedWildlife) {
+    Objects.requireNonNull(territory1);
+    Objects.requireNonNull(territory2);
     Objects.requireNonNull(allowedWildlife);
-    this.sides = new TerritoryType[] {north,east,south,west};
+    this.sides = new TerritoryType[] {territory1,territory1,territory2,territory2};
     this.allowedWildlife = allowedWildlife;
     this.wildlife = null;
   }
