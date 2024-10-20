@@ -1,2 +1,0 @@
-eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1729344784276">\n    <vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n        <vm id\="1729344784276" name\="jdk-23" path\="/opt/jdk-23"/>\n        <vm id\="/usr/lib/jvm/java-22-jdk" name\="java-22-jdk" path\="/usr/lib/jvm/java-22-jdk"/>\n    </vmType>\n</vmSettings>\n

@@ -1,5 +1,0 @@
-package fr.igm.cascabeta;
-
-public enum TerritoryType {
-  
-}
