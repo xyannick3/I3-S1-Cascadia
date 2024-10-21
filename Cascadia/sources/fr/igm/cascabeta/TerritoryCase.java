@@ -3,6 +3,9 @@ package fr.igm.cascabeta;
 import java.util.List;
 import java.util.Objects;
 
+import fr.igm.cascabeta.enums.TerritoryType;
+import fr.igm.cascabeta.enums.WildlifeToken;
+
 public class TerritoryCase {
   private TerritoryType[] sides;
   private WildlifeToken wildlife;
@@ -29,7 +32,7 @@ public class TerritoryCase {
     sides[0] = sides[1];
     sides[1] = sides[2];
     sides[2] = sides[3];
-    sides[0] = buffer;
+    sides[3] = buffer;
   }
   //adds a wildlife to the case
   public boolean addWildlife(WildlifeToken token) {
