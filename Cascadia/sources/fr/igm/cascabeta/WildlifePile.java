@@ -18,9 +18,9 @@ public class WildlifePile {
       pile.add(WildlifeToken.FOX);
       pile.add(WildlifeToken.ELK);
     }
-    melanger();
+    shuffle();
   }
-  public void melanger() {
+  public void shuffle() {
     Collections.shuffle(pile, new Random());
   }
   //cette méthode pioche un token et l'enlèvre de la pioche.
@@ -39,7 +39,7 @@ public class WildlifePile {
   public void add(WildlifeToken token) {
     Objects.requireNonNull(token);
     pile.add(token);
-    Collections.shuffle(pile, new Random());
+    shuffle();
   }
   
   
