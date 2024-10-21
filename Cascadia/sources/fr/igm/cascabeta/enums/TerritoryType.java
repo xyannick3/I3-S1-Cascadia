@@ -1,4 +1,4 @@
-package fr.igm.cascabeta;
+package fr.igm.cascabeta.enums;
 
 public enum TerritoryType {
   FOREST,
