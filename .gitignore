@@ -1,8 +1,8 @@
 # Fichiers et dossiers Eclipse
-/.project
-/.classpath
-/.settings/
-/.metadata/
+.project
+.classpath
+.settings/
+.metadata/
 # Dossiers binaires
 /bin/
 /build/
@@ -23,6 +23,6 @@
 .DS_Store
 Thumbs.db
 
-*.xmi
-*.snap
-*.prefs
+.xmi
+.snap
+.prefs
