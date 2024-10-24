@@ -17,11 +17,11 @@ public class Player {
     playerTerritory = new TerritoryGrid(numberOfTerritory);
     numberOfTerritory = 0;
   }
-  public boolean addTerritory(TerritoryCase newTerritory, int x, int y) {
+  public boolean addTerritory(TerritoryCase newTerritory, Coordinates position) {
     /* the add function of playerTerritory field must check the arguments
      * or we check here too ?
      * */
-    return playerTerritory.addCase(newTerritory, x, y);
+    return playerTerritory.addCase(newTerritory, position);
   }
   public TerritoryGrid getTerritoryGrid() {
     return playerTerritory;
